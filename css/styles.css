@@ -1,0 +1,45 @@
+h1 {
+  color: white;
+  font-family: "Montserrat", sans-seri;
+  font-size: 125px;
+  text-shadow: 1px 1px 2px #FFB9B9, 0 0 1em #FF7D7D, 0 0 0.2em #FF7D7D;
+}
+
+body {
+  background-image: url(https://img.freepik.com/vector-gratis/ejemplo-papel-pintado-comida-modelo-tocino_53876-62221.jpg?w=826&t=st=1668289865~exp=1668290465~hmac=d6d0c191c82e7c8de27b7b71499aec6274423e57af4efbfc4b72884f3e58c8af);
+  background-size: cover;
+  display: block;
+}
+
+body, html {
+  margin: 11px;
+  background-color: #FF7D7D;
+}
+
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter p {
+  color: black;
+  font-family: monospace;
+  font-size: 25px;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid white; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 4s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
